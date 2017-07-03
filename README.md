@@ -1,9 +1,3 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
-
 # ggmin
 A clean, minimalist theme for ggplot2
 
@@ -38,4 +32,4 @@ mpg %>%
   ggmin::theme_min()
   
 ```
-![](fig/mpg.pdf)
+![](fig/mpg.png)
