@@ -23,13 +23,22 @@ df %>%
 ```
 library(ggmin)
 
-mpg %>% 
+gg <- mpg %>% 
   filter(class %in% c("compact", "suv", "pickup", "minivan")) %>% 
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(colour = factor(year))) +
   facet_wrap(~ class) +
-  ggtitle("A scatterplot") +
-  ggmin::theme_min()
+  ggtitle("A scatterplot")
   
+gg
+```
+
+![](fig/mpg_default.png)
+  
+  
+```  
+gg <- gg  + ggmin::theme_min()
+
+gg
 ```
 ![](fig/mpg.png)
