@@ -3,7 +3,7 @@ Title: A clean, minimalist theme for ggplot2
 Version: 0.0.0.9000
 Authors@R: person("Selin", "Jessa", email = "selinjessa@gmail.com", role = c("aut", "cre"))
 Description: Provies a clean, minimalist theme for ggplot2.
-Depends: R (>= 3.4.0),
+Depends: R (>= 3.2.0),
          ggplot2 (>= 2.2.1)
 License: What license is it under?
 Encoding: UTF-8
