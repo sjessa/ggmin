@@ -36,6 +36,7 @@ mpg %>%
 ```
 ![](fig/mpg.png)
 
+
 The `ggplot2` default:
 
 ![](fig/mpg_default.png)
