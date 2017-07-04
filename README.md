@@ -20,25 +20,22 @@ df %>%
 ```
 
 # example
+
+With `ggmin::theme_min()`:
 ```
 library(ggmin)
 
-gg <- mpg %>% 
+mpg %>% 
   filter(class %in% c("compact", "suv", "pickup", "minivan")) %>% 
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(colour = factor(year))) +
   facet_wrap(~ class) +
-  ggtitle("A scatterplot")
-  
-gg
-```
+  ggtitle("A scatterplot") +
+  ggmin::theme_min()
 
-![](fig/mpg_default.png)
-  
-  
-```  
-gg <- gg  + ggmin::theme_min()
-
-gg
 ```
 ![](fig/mpg.png)
+
+The `ggplot2` default:
+
+![](fig/mpg_default.png)
