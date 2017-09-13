@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/selinj/ggmin.svg?branch=master)](https://travis-ci.org/selinj/ggmin)
+[![Build Status](https://travis-ci.org/sjessa/ggmin.svg?branch=master)](https://travis-ci.org/sjessa/ggmin)
 
 # ggmin
 A clean, minimalist theme for ggplot2
