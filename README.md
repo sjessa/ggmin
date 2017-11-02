@@ -7,7 +7,7 @@ A clean, minimalist theme for ggplot2
 # install
 ```
 install.packages("devtools")  
-devtools::install_github("selinj/ggmin")
+devtools::install_github("sjessa/ggmin")
 ```
 
 # use
