@@ -2,10 +2,12 @@
 % Please edit documentation in R/theme_min.R
 \name{theme_min_ppt}
 \alias{theme_min_ppt}
-\title{A clean theme for ggplot2, with some handy defaults for Powerpoints
-
-Essentially \code{\link{theme_min}} with larger text in certain elements,
-and a little room between axis titles and the plot.}
+\title{theme_min_ppt}
 \usage{
 theme_min_ppt(base_size = 11, base_family = "")
+}
+\description{
+A clean theme for ggplot2, with some handy defaults for Powerpoints:
+essentially \code{\link{theme_min}} with larger text in certain elements,
+and a little room between axis titles and the plot.
 }

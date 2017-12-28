@@ -2,3 +2,4 @@
 
 export(theme_min)
 export(theme_min_ppt)
+importFrom(ggplot2,theme_light)

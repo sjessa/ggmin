@@ -1,6 +1,10 @@
+#' @importFrom ggplot2 theme_light
+NULL
 
-#' @name theme_min
-#' @title A clean theme for ggplot2
+
+#' theme_min
+#'
+#' A clean theme for ggplot2
 #'
 #' @export
 theme_min <- function(base_size = 11, base_family = "") {
@@ -26,10 +30,10 @@ theme_min <- function(base_size = 11, base_family = "") {
 }
 
 
-#' @name theme_min_ppt
-#' @title A clean theme for ggplot2, with some handy defaults for Powerpoints
+#' theme_min_ppt
 #'
-#' Essentially \code{\link{theme_min}} with larger text in certain elements,
+#' A clean theme for ggplot2, with some handy defaults for Powerpoints:
+#' essentially \code{\link{theme_min}} with larger text in certain elements,
 #' and a little room between axis titles and the plot.
 #'
 #' @export
