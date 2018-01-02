@@ -5,13 +5,13 @@ Two clean themes for `ggplot2`:
 * `theme_min()`: a minimalist theme for general use
 * `theme_powerpoint()`: a minimalist theme with a few handy defaults for plots for Powerpoint slides: larger text in certain elements, and a little room between axis titles and the plot
 
-# install
+### install
 ```
 install.packages("devtools")  
 devtools::install_github("sjessa/ggmin")
 ```
 
-# use
+### use
 ```
 df %>%
   ggplot(aes(x = X, y = y)) +
@@ -20,7 +20,7 @@ df %>%
 
 ```
 
-# example
+### example
 ```
 p <- mpg %>% 
   filter(class %in% c("compact", "suv")) %>% 
@@ -37,4 +37,4 @@ p + ggmin::theme_powerpoint() +
 p +
   ggtitle("A default scatterplot")
 ```
-![](fig/mpg.png)
+<img src="fig/mpg.png" width="70%">
