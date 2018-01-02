@@ -1,8 +1,9 @@
 [![Build Status](https://travis-ci.org/sjessa/ggmin.svg?branch=master)](https://travis-ci.org/sjessa/ggmin)
 
 # ggmin
-A clean, minimalist theme for ggplot2
-
+Two clean themes for `ggplot2`:
+* `theme_min()`: a minimalist theme for general use
+* `theme_powerpoint`: a minimalist theme with a few handy defaults for plots for Powerpoint slides: larger text in certain elements, and a little room between axis titles and the plot
 
 # install
 ```
@@ -12,8 +13,6 @@ devtools::install_github("sjessa/ggmin")
 
 # use
 ```
-library(ggmin)
-
 df %>%
   ggplot(aes(x = X, y = y)) +
   ... + # Other layers (geoms, etc.) here
@@ -22,23 +21,21 @@ df %>%
 ```
 
 # example
-
-With `ggmin::theme_min()`:
 ```
-library(ggmin)
-
-mpg %>% 
-  filter(class %in% c("compact", "suv", "pickup", "minivan")) %>% 
+p <- mpg %>% 
+  filter(class %in% c("compact", "suv")) %>% 
   ggplot(aes(x = displ, y = hwy)) +
   geom_point(aes(colour = factor(year))) +
-  facet_wrap(~ class) +
-  ggtitle("A scatterplot") +
-  ggmin::theme_min()
+  facet_wrap(~ class, ncol = 2)
+
+p + ggmin::theme_min() +
+  ggtitle("A minimalist scatterplot")
+
+p + ggmin::theme_powerpoint() +
+  ggtitle("A scatterplot suitable for Powerpoint")
+  
+p +
+  ggtitle("A default scatterplot")
 
 ```
 ![](fig/mpg.png)
-
-
-The `ggplot2` default:
-
-![](fig/mpg_default.png)
